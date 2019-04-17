@@ -137,8 +137,7 @@ if( __name__  == "__main__"):
     x1=np.linspace(-2,4,100) # generater the test data
     y1=func(x1,W)            # predict the result of the test data
     draw_plot(x1,y1,"#990000","svd_simple预测关系")         # draw the
-    #plot.legend()
-   # plot.show()
+
     #the second
 
     W = svd_batch(X, D)  # train model using the svd_batch
@@ -147,11 +146,11 @@ if( __name__  == "__main__"):
     draw_plot(x1, y2, "009900","svd_batch预测关系")  # draw the
 
     #nonlinear
-    W = nonlinear_simple(X, D)
+   # W = nonlinear_simple(X, D)
    #W = nonlinear_batch(X,D)  # train model using the nonlinear_batch
-    x1= np.linspace(-2, 4, 100)  # generater the test data
-    y3 = f(x1, W)  # predict the result of the test data
-    draw_plot(x1, y3, "550000", "nonlinear_batch预测关系")  # draw the
+    #x1= np.linspace(-2, 4, 100)  # generater the test data
+   # y3 = f(x1, W)  # predict the result of the test data
+   # draw_plot(x1, y3, "550000", "nonlinear_batch预测关系")  # draw the
 
     plot.legend()
     plot.show()
