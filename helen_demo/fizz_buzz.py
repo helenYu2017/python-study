@@ -21,7 +21,7 @@ def feature_label(y):
 
 train_start=0
 train_end=10
-print(np.sqrt(36*36-18*18))
+print(np.sqrt(24*24-12*12))
 x_train=np.array([feature(i) for i in range(train_start,train_end)])
 y_train=np.array([feature_label(i) for i in range(train_start,train_end)])
 
